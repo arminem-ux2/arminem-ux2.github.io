@@ -1,0 +1,6 @@
+<carousel [interval]="false" [noWrap]="noWrapSlides">
+    <slide *ngFor="let slidez of slides; let index=index"
+           [active]="slidez.active">
+        <img [id]="slidez.imageId" [src]="slidez.image" class="stretch">
+    </slide>
+</carousel>

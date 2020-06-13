@@ -1,0 +1,87 @@
+<page-header></page-header>
+
+<div class="row padding50">
+
+    <div class="row" id="row1">
+        <div class="col-md-3">
+            <div class="row">
+                <img id="pl1" src="../app/resources/paintings/paintingsLogo.png"/>
+            </div>
+            <div class="row text-center">
+                <p><strong>PROJECT NAME 1</strong></p>
+            </div>
+            <div class="row text-center text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into
+                electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row  padding50 paddingLeft25">
+                <imgslider [slides]="this.slides1"></imgslider>
+            </div>
+        </div>
+
+        <div class="navbar-fixed-side navbar-fixed-side-right padding50">
+            <sidebar [title]="'PAINTINGS/PRINTS'" [Items]="this.SideBarItems" (itemclicked)="this.scrollToElement($event)"></sidebar>
+        </div>
+
+    </div>
+
+    <div class="space15"></div>
+
+    <div class="row" id="row2">
+        <div class="col-md-3">
+            <div class="row">
+                <img id="pl2" src="../app/resources/paintings/paintingsLogo.png"/>
+            </div>
+            <div class="row text-center">
+                <p><strong>PROJECT NAME 2</strong></p>
+            </div>
+            <div class="row text-center text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into
+                electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row  padding50 paddingLeft25">
+                <img id="img2" class="stretch" src="../app/resources/paintings/p2.png"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="space15"></div>
+
+    <div class="row" id="row3">
+        <div class="col-md-3">
+            <div class="row">
+                <img id="pl3" src="../app/resources/paintings/paintingsLogo.png"/>
+            </div>
+            <div class="row text-center">
+                <p><strong>PROJECT NAME 3</strong></p>
+            </div>
+            <div class="row text-center text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into
+                electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row  padding50 paddingLeft25">
+                <img id="img3" class="stretch" src="../app/resources/paintings/p3.png"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="space250"></div>
+
+</div>
+
+

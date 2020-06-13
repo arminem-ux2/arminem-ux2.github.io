@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-2">
+        <a class="pointer" (click)="this.toggleSideBar()">
+            <img src="../app/resources/sidebar/Projects.png"/>
+        </a>
+    </div>
+    <div class="col-md-10 paddingLeft25" [hidden]="this.closed">
+        <div class="row">
+            <div class="text-center smallFont"><strong>{{title}}</strong></div>
+        </div>
+        <div class="space15"></div>
+        <div *ngFor="let item of this.Items ,let i = index" class="row">
+            <div class="row">
+                <div class="text-center xsmallFont"><strong>{{item.name}}</strong></div>
+            </div>
+            <div class="row text-center">
+                    <img class="sidebarImage pointer" src="{{item.imageLink}}" (click)="this.scrollToElement(item.id)"/>
+            </div>
+        </div>
+    </div>
+</div>
