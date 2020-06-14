@@ -1,82 +1,76 @@
-<div id="infoPanel" class="info-panel">
+<div id="infoPanel" class="container">
     <div class="row text-center">
-        <span class="txt-title">Expertise</span>
+        <span id="expertiseLabel">Expertise</span>
     </div>
-    <div class="space70"></div>
+
     <div class="row text-center">
 
-        <div class="col-md-4 expertise">
-            <div class="row text-center plabels">
-                <div class="col-md-3 top">
-                    <span>Interaction Design</span>
-                </div>
-                <div class="col-md-6">
-                    <img id="img60" class="animated zoomIn" src="../app/resources/more/info60.png"/>
-                </div>
-                <div class="col-md-3 bottom">
-                    <span>Visual Design</span>
-                </div>
-            </div>
+        <div class="col-md-4">
             <div class="row text-center lHeader">
                 <span class="zoomIn">UI/UX</span>
             </div>
+            <div class="row text-center plabels">
+                <div class="col-md-3">
+                    <span>Interaction Design</span>
+                </div>
+                <div class="col-md-6">
+                    <img id="img60" class="animated zoomIn" src="../app/resources/more/60.png"/>
+                </div>
+                <div class="col-md-3 ">
+                    <span>Visual Design</span>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-4 expertise">
+        <div class="col-md-4">
+            <div class="row text-center lHeader">
+                <span>BRAND ID</span>
+            </div>
             <div class="row text-center plabels">
-                <div class="col-md-3 top txt-logotype">
-                    <div class="row text-center ">
+                <div class="col-md-3">
+                    <div class="row text-center">
                         <span>Logotype Design</span>
                     </div>
-                </div>
-                <div class="col-md-3 left-bottom txt-corporate">
-                    <div class="row text-center ">
+                    <div class="row text-center">
                         <span>Corporate Design</span>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img id="img30" class="animated zoomIn" src="../app/resources/more/info30.png"/>
+                    <img id="img30" class="animated zoomIn" src="../app/resources/more/30.png"/>
                 </div>
-                <div class="col-md-3 top-right">
+                <div class="col-md-3">
                     <div class="row text-center">
                         <span>AD Materials</span>
                     </div>
-                </div>
-                    <div class="col-md-3 bottom txt-brand">
                     <div class="row text-center">
                         <span>Brand Adaption</span>
                     </div>
                 </div>
             </div>
-
-            <div class="row text-center lHeader">
-                <span>BRAND ID</span>
-            </div>
         </div>
 
-        <div class="col-md-4 expertise">
-
+        <div class="col-md-4">
+            <div class="row text-center lHeader">
+                <span>ART</span>
+            </div>
             <div class="row text-center plabels">
-                <div class="col-md-3 left-bottom txt-illustration">
+                <div class="col-md-3">
                     <span>Illustrations</span>
                 </div>
                 <div class="col-md-6">
-                    <img id="img10" class="animated zoomIn" src="../app/resources/more/info10.png"/>
+                    <img id="img10" class="animated zoomIn" src="../app/resources/more/10.png"/>
                 </div>
-                <div class="col-md-3 top-right">
+                <div class="col-md-3">
                     <span>Paintings</span>
                 </div>
-            </div>
-            <div class="row text-center lHeader">
-                <span>ART</span>
             </div>
         </div>
     </div>
 
-    <div id="posRect" class="row text-center pos-rect">
+    <div id="posRect" class="row text-center">
 
         <div class="col-md-4 col-md-offset-4">
-            <div class="row text-center  colorWhite">
+            <div class="row text-center plabels colorWhite">
                 <span>{{this.Items[this.timelineModeFixed -1].HeaderWorkDateText}}</span>
             </div>
 
@@ -91,17 +85,17 @@
                     <img src="../app/resources/more/aright.png"/>
                 </div>
             </div>
-            <div class="row text-center  colorWhite">
+            <div class="row text-center plabels colorWhite">
                 <span>{{this.Items[this.timelineModeFixed -1].HeaderWorkPlace}}</span>
             </div>
 
         </div>
     </div>
 
-    <div class="space50"></div>
+    <div class="space15"></div>
 
-    <div class="row text-center job-experiance">
-        <div class="row">
+    <div class="row text-center">
+        <div class="row plabels">
             <div class="col-md-1">
             </div>
             <div class="col-md-2">
@@ -175,30 +169,30 @@
     <div class="space15"></div>
 
     <div class="row text-center">
-        <div id="imgRow" class="row text-right">
+        <div id="imgRow" class="row text-right  plabels">
             <div class="col-md-1 fixedHeight85">
             </div>
             <div class="col-md-2 fixedHeight85">
                 <img class="imgcenter pointer paddingtop25px"
-                     src="../app/resources/more/{{this.timelineMode == 5 ? 'gDisabled' : 'gEnabled' }}.png"
+                     src="../app/resources/more/{{this.timelineMode == 5 ? 'gEnabled' : 'gDisabled' }}.png"
                      (mouseover)="this.OnMouseOver(5)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(5)"/>
             </div>
             <div class="col-md-3 fixedHeight85">
                 <img class="imgcenter pointer paddingtop25px"
-                     src="../app/resources/more/{{this.timelineMode == 4 ? 'gDisabled' : 'gEnabled' }}.png"
+                     src="../app/resources/more/{{this.timelineMode == 4 ? 'gEnabled' : 'gDisabled' }}.png"
                      (mouseover)="this.OnMouseOver(4)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(4)"/>
             </div>
             <div class="col-md-2 fixedHeight85">
                 <img class="imgcenter pointer paddingtop25px"
-                     src="../app/resources/more/{{this.timelineMode == 3 ? 'gDisabled' : 'gEnabled' }}.png"
+                     src="../app/resources/more/{{this.timelineMode == 3 ? 'gEnabled' : 'gDisabled' }}.png"
                      (mouseover)="this.OnMouseOver(3)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(3)"/>
             </div>
             <div class="col-md-2 fixedHeight85">
                 <img class="imgcenter pointer paddingtop25px"
-                     src="../app/resources/more/{{this.timelineMode == 2 ? 'gDisabled' : 'gEnabled' }}.png"
+                     src="../app/resources/more/{{this.timelineMode == 2 ? 'gEnabled' : 'gDisabled' }}.png"
                      (mouseover)="this.OnMouseOver(2)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(2)"/>
             </div>
@@ -211,40 +205,40 @@
         <div class="row">
 
         </div>
-        <div class="row  fixedHeight35">
+        <div class="row plabels fixedHeight35">
             <span style="width: 5%">2008</span>
-            <!--<img src="../app/resources/more/aleftB.png"/>-->
+            <img src="../app/resources/more/aleftB.png"/>
             <img style="width: 85%" src="../app/resources/more/tLine.png"/>
             <span>2016</span>
         </div>
-        <div id="imgRow2" class="row text-right fixedHeight85">
-            <div class="col-md-1 text-center">
+        <div id="imgRow2" class="row text-right fixedHeight50  plabels">
+            <div class="col-md-1">
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-md-2">
                 <img class="imgcenter pointer"
                      src="../app/resources/more/{{this.timelineMode == 5 ? 'faceEn' : 'faceDis' }}.png"
                      (mouseover)="this.OnMouseOver(5)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(5)"/>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3">
                 <img class="imgcenter pointer"
                      src="../app/resources/more/{{this.timelineMode == 4 ? 'faceEn' : 'faceDis' }}.png"
                      (mouseover)="this.OnMouseOver(4)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(4)"/>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-md-2">
                 <img class="imgcenter pointer"
                      src="../app/resources/more/{{this.timelineMode == 3 ? 'faceEn' : 'faceDis' }}.png"
                      (mouseover)="this.OnMouseOver(3)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(3)"/>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-md-2">
                 <img class="imgcenter pointer"
                      src="../app/resources/more/{{this.timelineMode == 2 ? 'faceEn' : 'faceDis' }}.png"
                      (mouseover)="this.OnMouseOver(2)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
                      (click)="this.OnFixTimelineMode(2)"/>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-md-2">
                 <img class="imgcenter pointer"
                      src="../app/resources/more/{{this.timelineMode == 1 ? 'faceEn' : 'faceDis' }}.png"
                      (mouseover)="this.OnMouseOver(1)" (mouseleave)="this.OnMouseOver(this.timelineModeFixed)"
@@ -253,8 +247,8 @@
         </div>
     </div>
 
-    <div class="row text-center job-experiance">
-        <div class="row">
+    <div class="row text-center">
+        <div class="row plabels">
             <div class="col-md-1">
             </div>
             <div class="col-md-2">
@@ -266,10 +260,11 @@
                         Job Responsibilities...
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
+                        {{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? this.Items[this.timelineMode
+                        -1].TimelineWorkInfoMore : this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoMore }}
+                        <span class="pointer" (click)="this.showMore(5)">{{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? 'Show Less' : 'Show More'}}</span>
                     </div>
                 </div>
             </div>
@@ -282,12 +277,12 @@
                         Job Responsibilities...
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
+                        {{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? this.Items[this.timelineMode
+                        -1].TimelineWorkInfoMore : this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoMore }}
+                        <span class="pointer" (click)="this.showMore(4)">{{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? 'Show Less' : 'Show More'}}</span>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-2">
@@ -299,12 +294,12 @@
                         Job Responsibilities...
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
+                        {{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? this.Items[this.timelineMode
+                        -1].TimelineWorkInfoMore : this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoMore }}
+                        <span class="pointer" (click)="this.showMore(3)">{{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? 'Show Less' : 'Show More'}}</span>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-2">
@@ -316,12 +311,12 @@
                         Job Responsibilities...
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
+                        {{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? this.Items[this.timelineMode
+                        -1].TimelineWorkInfoMore : this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoMore }}
+                        <span class="pointer" (click)="this.showMore(2)">{{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? 'Show Less' : 'Show More'}}</span>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-2">
@@ -333,12 +328,12 @@
                         Job Responsibilities...
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
+                        {{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? this.Items[this.timelineMode
+                        -1].TimelineWorkInfoMore : this.Items[this.timelineMode -1].TimelineWorkInfoLess }}
                     </div>
                     <div class="row text-center">
-                        {{this.Items[this.timelineMode -1].TimelineWorkInfoMore }}
+                        <span class="pointer" (click)="this.showMore(1)">{{this.Items[this.timelineMode -1].TimelineWorkInfoShowMore ? 'Show Less' : 'Show More'}}</span>
                     </div>
-
                 </div>
             </div>
         </div>
