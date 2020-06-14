@@ -1,2 +1,258 @@
 <page-header></page-header>
-<h1>UI/UX</h1>
+
+<div class="row padding50">
+
+    <div class="row" id="row1">
+        <div class="col-md-3">
+            <!--<img id="pl1" class="paintings-img" src="../app/resources/uiux/uiux_image.png"/>-->
+            <div class="row">
+                <strong class="sub-title">Fullbox</strong>
+            </div>
+            <div class="row paintings-info">
+                <p>All in one software solutions</p>
+                <p>(website/branding)</p>
+                <p>Date Created: December 2015</p>
+                <p>Owner: KSPE Software</p>
+                <br/>
+                <p>A web based project to provide assistance to those who seek a full package of services for an end to
+                    end software development and product implementation.</p>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <imgslider [slides]="this.slides1"></imgslider>
+        </div>
+
+        <div class="navbar-fixed-side navbar-fixed-side-right">
+            <sidebar [title]="'UI/UX'" [Items]="this.SideBarItems"
+                     (itemclicked)="this.scrollToElement($event)"></sidebar>
+        </div>
+
+    </div>
+    <div class="space50"></div>
+    <div class="row" id="row2">
+        <div class="col-md-3">
+            <!--<div class="row">-->
+            <!--<img class="paintings-img" id="pl2" src="../app/resources/uiux/uiux_image.png">-->
+            <!--</div>-->
+            <div class="row">
+                <strong class="sub-title">AlignedCells</strong>
+            </div>
+            <div class="row paintings-info">
+
+                <p>Data Driven Analytics</p>
+                <p>( Promotional Website / Saas Demo)</p>
+                <p>Date Created: Jan 2017</p>
+                <p>Owner: Max Mednikov</p>
+                <br/>
+                <p>Saas Product designed to make data analytics as simple as possible. Using data driven search, analyze
+                    data and build reports-instantaneously.
+                    The use of different data visualization techniques and reporting tools are the key components in
+                    making it fun and easy for the user to the data manipulations and research.</p>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <imgslider [slides]="this.slides2"></imgslider>
+        </div>
+    </div>
+    <div class="space50"></div>
+    <div class="row" id="row3">
+        <div class="col-md-3">
+            <!--<img class="paintings-img" id="pl3" src="../app/resources/uiux/uiux_image.png">-->
+            <div class="row">
+                <strong class="sub-title">Barracuda</strong>
+            </div>
+            <div class="row paintings-info">
+                <p>Driver App</p>
+                <p>(Ios, Android Application)</p>
+                <p>Date Created: Feb 2015</p>
+                <p>Owner: Unified Software LLC</p>
+                <br/>
+                <p>
+                    The Barracuda Application is designed for Black Car drivers in NY. The goal of the product is to
+                    make the day to day working routine (i.e zone booking, order acceptation, payments…etc) easy flowing
+                    and time saving with minimum distractions for the user.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <imgslider [slides]="this.slides3"></imgslider>
+        </div>
+    </div>
+    <div class="space50"></div>
+
+    <!--<div class="row" id="row4">-->
+        <!--<div class="col-md-3">-->
+            <!--&lt;!&ndash;<img class="paintings-img" id="pl4" src="../app/resources/uiux/uiux_image.png">&ndash;&gt;-->
+            <!--<div class="row">-->
+                <!--<strong class="sub-title">Devfactory</strong>-->
+            <!--</div>-->
+            <!--<div class="row paintings-info">-->
+                <!--<p>Developer Portal/ Bug Prediction Dashboard</p>-->
+                <!--<p>Dashboard Wireframe</p>-->
+                <!--<p>Date Created: Sept 2016</p>-->
+                <!--<p>Owner: Devfactory</p>-->
+                <!--<br/>-->
+                <!--<p>The Bug Prediction Dash is part of a complex portal created for developers. The goal of the project-->
+                    <!--is to assist the agile working process of developers by reducing iteration time of daily bug fixes-->
+                    <!--using bug prediction methods.</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+            <!--<imgslider [slides]="this.slides4"></imgslider>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+    <!--<div class="row" id="row5">-->
+        <!--<div class="col-md-3">-->
+            <!--&lt;!&ndash;<img class="paintings-img" id="pl5" src="../app/resources/uiux/uiux_image.png">&ndash;&gt;-->
+            <!--<div class="row">-->
+                <!--<strong class="sub-title">Devfactory</strong>-->
+            <!--</div>-->
+            <!--<div class="row paintings-info">-->
+                <!--<p>Developer Portal/ Strong Test</p>-->
+                <!--<p>Wireframe</p>-->
+                <!--<p>Date Created: Aug 2016</p>-->
+                <!--<p>Owner: Devfactory</p>-->
+                <!--<br/>-->
+                <!--<p>Strong test sections is also a part of the above mentioned Developer Portal.-->
+                    <!--The goal of the page is to improve code quality by-->
+                    <!--categorizing and finding mutation types in codebase and effectively presenting it to the user to-->
+                    <!--catch the needed amount of attention to the parts of the code that have been changed.</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+            <!--<imgslider [slides]="this.slides5"></imgslider>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+    <!--<div class="row" id="row6">-->
+        <!--<div class="col-md-3">-->
+            <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="paintings-img" id="pl6" src="../app/resources/uiux/uiux_image.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<div class="row">-->
+                <!--<strong class="sub-title">Devfactory</strong>-->
+            <!--</div>-->
+            <!--<div class="row paintings-info">-->
+                <!--<p>Developer Portal/ Copy/Pasted Code</p>-->
+                <!--<p>Wireframe</p>-->
+                <!--<p>Date Created: Jul 2016</p>-->
+                <!--<p>Owner: Devfactory</p>-->
+                <!--<br/>-->
+                <!--<p>The goal of the page is to indicate instance duplications across all codebase. From user’s-->
+                    <!--perspective it’s a great visualization of parts where alterations can be made.-->
+                    <!--It’s a cross-examination visualization combined with color coding.-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+            <!--<imgslider [slides]="this.slides6"></imgslider>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+    <!--<div class="row" id="row7">-->
+        <!--<div class="col-md-3">-->
+            <!--&lt;!&ndash;<img class="paintings-img" id="pl7" src="../app/resources/uiux/uiux_image.png">&ndash;&gt;-->
+            <!--<div class="row">-->
+                <!--<strong class="sub-title">Devfactory</strong>-->
+            <!--</div>-->
+            <!--<div class="row paintings-info">-->
+                <!--<p>Test Manager Portal/ Dashboard</p>-->
+                <!--<p>Wireframe</p>-->
+                <!--<p>Date Created: Jun 2016</p>-->
+                <!--<p>Owner: Devfactory</p>-->
+                <!--<br/>-->
+                <!--<p>Testing is a crucial part of the development process, so the goal of this portal is to assist the-->
+                    <!--user (Test Managers) in prioritizing and automating the testing process, by clear visual guidance in-->
+                    <!--test order and urgency as well as providing clear and standing out statistics on the picture in-->
+                    <!--general.</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+            <!--<imgslider [slides]="this.slides7"></imgslider>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+    <!--<div class="row" id="row8">-->
+        <!--<div class="col-md-3">-->
+            <!--&lt;!&ndash;<img class="paintings-img" id="pl8" src="../app/resources/uiux/uiux_image.png">&ndash;&gt;-->
+            <!--<div class="row">-->
+                <!--<strong class="sub-title">Devfactory</strong>-->
+            <!--</div>-->
+            <!--<div class="row paintings-info">-->
+                <!--<p>Test Manager Portal/ Assignment Portal</p>-->
+                <!--<p>Wireframe</p>-->
+                <!--<p>Date Created: Jun 2016</p>-->
+                <!--<p>Owner: Devfactory</p>-->
+                <!--<br/>-->
+                <!--<p>All work processes include assigning team members certain tasks. The goal of the dashboard is to make the work load visually clear and ready for quick manipulations-->
+                    <!--A cross check scheme was applied which basically is a combination of the product, team members, and the amount of work that needs to be split.-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+            <!--<imgslider [slides]="this.slides8"></imgslider>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="space50"></div>
+    <!--<div class="row" id="row9">-->
+    <!--<div class="col-md-3">-->
+    <!--<img class="paintings-img" id="pl9" src="../app/resources/uiux/uiux_image.png">-->
+    <!--<div class="row text-center">-->
+    <!--<strong class="sub-title">PROJECT NAME 9</strong>-->
+    <!--</div>-->
+    <!--<div class="row paintings-info">-->
+    <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the-->
+    <!--industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and-->
+    <!--scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap-->
+    <!--into-->
+    <!--electronic typesetting, remaining essentially unchanged.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-9">-->
+    <!--<imgslider [slides]="this.slides9"></imgslider>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+    <!--<div class="row" id="row10">-->
+    <!--<div class="col-md-3">-->
+    <!--<div class="row">-->
+    <!--<img class="paintings-img" id="pl10" src="../app/resources/uiux/uiux_image.png">-->
+    <!--</div>-->
+    <!--<div class="row text-center">-->
+    <!--<strong class="sub-title">PROJECT NAME 10</strong>-->
+    <!--</div>-->
+    <!--<div class="row paintings-info">-->
+    <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the-->
+    <!--industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and-->
+    <!--scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap-->
+    <!--into-->
+    <!--electronic typesetting, remaining essentially unchanged.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-9">-->
+    <!--<imgslider [slides]="this.slides10"></imgslider>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+    <!--<div class="row" id="row11">-->
+    <!--<div class="col-md-3">-->
+    <!--<img class="paintings-img" id="pl11" src="../app/resources/uiux/uiux_image.png">-->
+    <!--<div class="row text-center">-->
+    <!--<strong class="sub-title">PROJECT NAME 11</strong>-->
+    <!--</div>-->
+    <!--<div class="row paintings-info">-->
+    <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the-->
+    <!--industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and-->
+    <!--scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap-->
+    <!--into-->
+    <!--electronic typesetting, remaining essentially unchanged.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-9">-->
+    <!--<imgslider [slides]="this.slides11"></imgslider>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="space50"></div>-->
+
+</div>
